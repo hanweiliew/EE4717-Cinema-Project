@@ -1,0 +1,93 @@
+
+<html>
+	<head>
+		<link rel="stylesheet" href = "style.css">
+
+		<script src = "js/slidingslide.js"></script>
+		<script type = "text/javascript" src = "validation.js"></script>
+		<title> | Han's Movie | </title>
+	</head>	
+
+
+<body>
+	<!------------Nav Bar ---------->
+	<section id="nav-bar">
+	  <nav class="navbar">
+		<a class="navbar-brand" href="home.php"><img src="Logo.jpg"></a>
+			<ul class = "navbar-nav">	
+				<li class = "nav-item">
+					<a class="nav-link" href="home.php">HOME</a>
+				</li>
+				<li class="nav-item">
+						<a class="nav-link" href="contactus.html">CONTACT US</a>
+				</li>
+			</ul>
+		</nav>
+	</section>
+
+<div class="contactus">
+	<center>
+	<h2>Send in your queries</h2>
+		<form action="contact.php" method="post" class="message">
+			
+			<div class="message">
+				<label for="name">Name</label><br>
+				<input type="text" id="name" name="name" onchange="validateName()" placeholder="Tan Ah Kow" required />
+			</div>
+			
+			<div class="message">
+                <label for="contact">Phone Number</label><br>
+                <input type="tel" id="contact" name="contact" placeholder="9875 6541" required onchange="validateContact()"/>
+            </div>
+			
+			<div class="message">
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" rows="10" placeholder="Your message..." required style="width:600px;"></textarea>
+            </div>
+			
+			<button type="submit">Submit</button>
+		</form>
+
+	<div class="infotable">
+	
+	<table border=1>
+		<tr>
+			<td>Name of Company:</td>
+			<td>LiewTiahCinema</td>
+		</tr>
+		<tr>
+			<td>Address:</td>
+			<td>288 North Bridge Road, 179103, Singapore 123288</td>
+		</tr>
+		<tr>
+			<td>Email:</td>
+			<td>liewtiah@gmail.com</td>
+		</tr>
+		<tr>
+			<td>Operating Hours:</td>
+			<td>Monday to Thursday: 10am to 12am<br>
+				Friday to Sunday: 10am to 2am</td>
+		</tr>
+	</table>
+	</center>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<footer><br>Copyright &copy; 2021 LiewTiahCinema<br>
+    <a href="mailto:Hanwei@Liew.com">Hanwei@Liew.com</a>
+</footer>
